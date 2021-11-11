@@ -9,7 +9,7 @@ variable "machine" {
 variable "project" {
   type = string
 }
-resource "google_compute_instance" "vm" {
+resource "google_compute_instance" "vm"{
   name         = "instance1"
   machine_type = "var.machine"
   zone         = "us-central-1a"
